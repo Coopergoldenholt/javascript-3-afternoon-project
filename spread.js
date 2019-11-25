@@ -17,7 +17,7 @@ let product = {
   imageUrl: 'https://i.ebayimg.com/images/g/9T4AAOSwbmdZf2jN/s-l640.jpg'
 }
 
-let productCopy = [...product]
+let productCopy = {...product}
 
 
 
