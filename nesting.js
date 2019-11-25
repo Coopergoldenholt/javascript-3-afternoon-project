@@ -184,7 +184,16 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 function looper (){
-  for(let i = numsArr.length; i <= 0; )
+  for(let i = numsArr.length - 1; i >= 0;i--){
+   for(let j = numsArr[i].length - 1; j >= 0; j--){
+     if(numsArr[i][j] % 2 === 0){
+       numsArr[i][j] = 'even'
+     } else {
+       numsArr[i][j] = 'odd'
+     }
+   }
+  }
+  return numsArr
 }
 
 
